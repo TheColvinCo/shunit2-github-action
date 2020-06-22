@@ -1,0 +1,9 @@
+name: "GitHub Action to run shunit2 tests"
+description: "Alpine tiny image to run shunit2 tests located in test folder"
+author: "Diego García"
+branding:
+  icon: "terminal"
+  color: "green"
+runs:
+  using: "docker"
+  image: "Dockerfile"
