@@ -31,9 +31,9 @@ jobs:
         env:
           SHUNIT_TEST_FOLDER:"the/folder"
 ```
-## Available variables
+## 🚨🚨 Available variables 🚨🚨
 
-🚨🚨**It is required** to pass the tests directory as environment variable.🚨🚨
+**It is required** to pass the tests directory as environment variable.  
 Example: 
 ```
       - name: GitHub Action to run shunit2 tests
