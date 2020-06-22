@@ -27,11 +27,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: GitHub Action to run shunit2 tests
-        uses: garciasdos/shunit2-github-action@v0.4
+        uses: garciasdos/shunit2-github-action@v1.0
+        env:
+          SHUNIT_TEST_FOLDER:"the/folder"
 ```
 ## Available variables
 
-[WIP] in next release the tests directory will be available as environment variable.
+🚨🚨**It is required** to pass the tests directory as environment variable.🚨🚨
 Example: 
 ```
       - name: GitHub Action to run shunit2 tests
