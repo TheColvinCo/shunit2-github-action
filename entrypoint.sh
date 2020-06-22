@@ -1,7 +1,5 @@
 #!/bin/sh -l
-DIR=tests/
-cd $DIR || exit
-echo `ls`
+cd $SHUNIT_TEST_FOLDER || exit
 for test in *.sh; do
   ./"$test"
 done
