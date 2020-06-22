@@ -1,3 +1,7 @@
 #!/bin/sh -l
-
-./test /usr/bin/shunit2
+DIR=tests/
+cd $DIR || exit
+echo `ls`
+for test in *.sh; do
+  ./"$test"
+done
